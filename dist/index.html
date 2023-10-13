@@ -2,27 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/briyani-44f01005.avif" class="rounded-full" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Briyani</title>
     
-    <link rel="stylesheet" href="/assets/index-43a03969.css">
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="/assets/index-3f5441cb.css">
   </head>
   <body>
     <!-- Header-section -->
-    <div class="relative">
+    <div class="relative ">
       <img src="/assets/Header-d5ed8ba6.jpg" />
       <div
-        class="absolute top-7 right-96 text-[#EAC696] font-semibolds flex space-x-3 items-center"
+        class="absolute top-10 right-96 text-[#fff] font-semibolds flex space-x-5 items-center text-2xl"
       >
-        <h2>Home</h2>
-        <h2>About</h2>
-        <h2>Variety</h2>
-        <h2>Origin</h2>
+        <a href="./index.html" class="scroll-smooth"><h2 class="hover:text-[#EAC696]">Home</h2></a>
+        <a href="#About-section" class="scroll-smooth"><h2 class="hover:text-[#EAC696]">About</h2></a>
+        <a href="#Variety-section" class="scroll-smooth"><h2 class="hover:text-[#EAC696]">Variety</h2></a>
+        <a href="#origin" class="scroll-smooth"><h2 class="hover:text-[#EAC696]">Origin</h2></a>
       </div>
+      <img
+        src="/assets/briyani-44f01005.avif"
+        class="absolute top-5 left-24 rounded-full w-40 hover:cursor-pointer"
+      />
+      <img src="" class="absolute left-16 top-5 rounded-full w-40" />
     </div>
     <!-- About-section -->
-    <div class="p-3 bg-[#65451F]">
+    <div class="p-3 bg-[#65451F]" id="About-section">
       <h1 class="text-center text-3xl mt-7 text-[#000]">About</h1>
       <div class="flex py-16 justify-around container">
         <p class="text-[#EAC696] px-20 font-medium text-lg">
@@ -33,19 +43,21 @@
           in different ways with a variety of components to create a number of
           highly tasty and unique flavor combinations.
         </p>
-        <img src="/assets/About-a7cbd3ce.jpg" class="w-96 rounded" />
+        <img src="/assets/About-a7cbd3ce.jpg" class="w-96 rounded animate_animated animate__bounce" />
       </div>
     </div>
     <!-- Variety-section -->
-    <div class="bg-[#765827] p-3">
+    <div class="bg-[#765827] p-3" id="Variety-section">
       <h1 class="text-center text-3xl mt-7 text-[#DBCBBD]">Varieties</h1>
-      <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
+      <p class="text-[#EAC696] px-20 font-medium text-lg p-5">
         There are many types of biryani, whose names are often based on their
         region of origin. For example, Sindhi biryani developed in the Sindh
         region of what is now Pakistan, and Hyderabadi biryani developed in the
         city of Hyderabad in South India.
       </p>
-      <div class="grid grid-cols-3 gap-9 place-content-center place-items-center">
+      <div
+        class="grid grid-cols-3 gap-6 place-content-center place-items-center p-10"
+      >
         <div>
           <img
             src="/assets/hyderabadi briyani-1d920854.webp"
@@ -68,19 +80,19 @@
           </p>
         </div>
         <div>
-          <img src="/assets/ambur (1)-55ab9fe6.jpg" class="w-80 rounded" />
+          <img src="/assets/ambur briyani-55ab9fe6.jpg" class="w-80 rounded" />
           <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
             Ambur Biryani
           </p>
         </div>
         <div>
-          <img src="/assets/bom (1)-3bf88f87.jpg" class="w-80 rounded" />
+          <img src="/assets/bombay briyani-3bf88f87.jpg" class="w-80 rounded" />
           <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
             Bombay Biryani
           </p>
         </div>
         <div>
-          <img src="/assets/sin-51ae708b.jpg" class="w-80 rounded" />
+          <img src="/assets/sindhi briyani-51ae708b.jpg" class="w-80 rounded" />
           <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
             Sindhi Biryani
           </p>
@@ -88,7 +100,7 @@
       </div>
     </div>
     <!-- Origin -->
-    <div class="bg-[#C8AE7D] p-3">
+    <div class="bg-[#C8AE7D] p-3" id="origin">
       <h1 class="text-center text-3xl mt-7 text-[#000]">Origin</h1>
       <div class="flex px-14 py-10">
         <video
@@ -113,5 +125,7 @@
         </p>
       </div>
     </div>
+    <!-- footer -->
+    <foooter > </foooter>
   </body>
 </html>
