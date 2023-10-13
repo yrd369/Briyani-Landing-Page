@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/briyani.avif" class="rounded-full" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Briyani</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -10,16 +10,21 @@
   </head>
   <body>
     <!-- Header-section -->
-    <div class="relative">
+    <div class="relative ">
       <img src="./assets/img/Header.jpg" />
       <div
-        class="absolute top-7 right-96 text-[#EAC696] font-semibolds flex space-x-3 items-center"
+        class="absolute top-10 right-96 text-[#fff] font-semibolds flex space-x-5 items-center text-2xl"
       >
-        <h2>Home</h2>
-        <h2>About</h2>
-        <h2>Variety</h2>
-        <h2>Origin</h2>
+        <a href="./"><h2 class="hover:text-[#EAC696]">Home</h2></a>
+        <a><h2 class="hover:text-[#EAC696]">About</h2></a>
+        <a><h2 class="hover:text-[#EAC696]">Variety</h2></a>
+        <a><h2 class="hover:text-[#EAC696]">Origin</h2></a>
       </div>
+      <img
+        src="./assets/img/briyani.avif"
+        class="absolute top-5 left-24 rounded-full w-40 hover:cursor-pointer"
+      />
+      <img src="" class="absolute left-16 top-5 rounded-full w-40" />
     </div>
     <!-- About-section -->
     <div class="p-3 bg-[#65451F]">
@@ -39,13 +44,15 @@
     <!-- Variety-section -->
     <div class="bg-[#765827] p-3">
       <h1 class="text-center text-3xl mt-7 text-[#DBCBBD]">Varieties</h1>
-      <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
+      <p class="text-[#EAC696] px-20 font-medium text-lg p-5">
         There are many types of biryani, whose names are often based on their
         region of origin. For example, Sindhi biryani developed in the Sindh
         region of what is now Pakistan, and Hyderabadi biryani developed in the
         city of Hyderabad in South India.
       </p>
-      <div class="grid grid-cols-3 gap-9 place-content-center place-items-center">
+      <div
+        class="grid grid-cols-3 gap-6 place-content-center place-items-center p-10"
+      >
         <div>
           <img
             src="./assets/img/hyderabadi briyani.webp"
@@ -68,19 +75,19 @@
           </p>
         </div>
         <div>
-          <img src="assets/img/ambur (1).jpg" class="w-80 rounded" />
+          <img src="assets/img/ambur briyani.jpg" class="w-80 rounded" />
           <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
             Ambur Biryani
           </p>
         </div>
         <div>
-          <img src="./assets/img/bom (1).jpg" class="w-80 rounded" />
+          <img src="./assets/img/bombay briyani.jpg" class="w-80 rounded" />
           <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
             Bombay Biryani
           </p>
         </div>
         <div>
-          <img src="./assets/img/sin.jpg" class="w-80 rounded" />
+          <img src="./assets/img/sindhi briyani.jpg" class="w-80 rounded" />
           <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
             Sindhi Biryani
           </p>
@@ -113,5 +120,7 @@
         </p>
       </div>
     </div>
+    <!-- footer -->
+    <foooter> </foooter>
   </body>
 </html>
