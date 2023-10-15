@@ -11,147 +11,673 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Briyani</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./dist/assets/index-a841f659.css" />
+    <link rel="stylesheet" href="./dist/assets/index-14317bd0.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
     <!-- Header-section -->
-    <div class="relative">
-      <img src="./assets/img/Header.jpg" />
-      <div
-        class="absolute top-10 right-96 text-[#fff] font-semibolds flex space-x-5 items-center text-2xl"
-      >
-        <a href="./index.html" class="scroll-smooth"
-          ><h2 class="hover:text-[#EAC696]">Home</h2></a
-        >
-        <a href="#About-section" class="scroll-smooth"
-          ><h2 class="hover:text-[#EAC696]">About</h2></a
-        >
-        <a href="#Variety-section" class="scroll-smooth"
-          ><h2 class="hover:text-[#EAC696]">Variety</h2></a
-        >
-        <a href="#origin" class="scroll-smooth"
-          ><h2 class="hover:text-[#EAC696]">Origin</h2></a
-        >
+    <header class="flex items-center justify-around px-10">
+      <div class="flex items-center">
+        <img src="./assets/img/logo.png" class="w-20 mt-3" />
+        <p class="text-[#fc7f09] font-bold text-xl">Biryani</p>
       </div>
-      <img
-        src="./assets/img/briyani.avif"
-        class="absolute top-5 left-24 rounded-full w-40 hover:cursor-pointer"
-      />
-      <img src="" class="absolute left-16 top-5 rounded-full w-40" />
+      <ul class="flex font-semibold space-x-7">
+        <li>Home</li>
+        <li>Why Briyani?</li>
+        <li>Varieties</li>
+        <li>Origin</li>
+      </ul>
+      <img src="./assets/img/logo-2-removebg-preview.png" class="w-20" />
+    </header>
+    <!-- hero-section -->
+    <div class="flex items-center justify-around ml-10 px-24">
+      <div class="space-y-6">
+        <div class="text-[#1e223f] space-y-1.5">
+          <h1 class="text-5xl font-bold">Keep Calm &</h1>
+          <h1 class="text-5xl font-bold">
+            Add <span class="text-[#fc7f09]">Dum</span>To Your
+          </h1>
+          <h1 class="text-5xl font-bold text-[#fc7f09]">Briyani.</h1>
+        </div>
+        <div class="text-[#b9bac3]">
+          <p>Food Tasted Better when you eat it with</p>
+          <p>famil and friends.</p>
+        </div>
+        <div
+          class="bg-[#fc7f09] text-white w-fit text-center rounded-xl font-semibold px-5 py-2 hover:scale-110"
+        >
+          Know more
+        </div>
+      </div>
+      <img src="./assets/img/hero.png" class="drop-shadow-2xl animate__animated animate__bounceInDown" />
     </div>
-    <!-- About-section -->
-    <div class="p-3 bg-[#65451F]" id="About-section">
-      <h1 class="text-center text-3xl mt-7 text-[#DBCBBD]">About</h1>
-      <div class="flex py-16 justify-around container">
-        <p class="text-[#EAC696] px-20 font-medium text-lg">
-          Biryani is a mixed rice dish originating among the Muslims of South
-          Asia. It is made with spices, vegetables, rice, and usually some type
-          of meat (chicken, beef, goat, lamb, prawn, or fish). In some cases
-          without any meat, and sometimes with eggs and potatoes. It is combined
-          in different ways with a variety of components to create a number of
-          highly tasty and unique flavor combinations.
-        </p>
-        <img
-          src="./assets/img/About.jpg"
-          class="w-96 animate__animated animate__bounce;"
-        />
-      </div>
+
+    <!-- Nutritional value -->
+    <div
+      class="mx-20 relative rounded-xl"
+      style="background-image: url('./assets/img/background.jpg'); height: 100vh"
+    >
+      <img
+        src="./assets/img/nutrtion.jpg"
+        class="rounded-3xl absolute top-7 left-8"
+      />
     </div>
     <!-- Variety-section -->
-    <div class="bg-[#765827] p-3" id="Variety-section">
-      <h1 class="text-center text-3xl mt-7 text-[#DBCBBD]">Varieties</h1>
-      <p class="text-[#EAC696] px-20 font-medium text-lg p-5">
-        There are many types of biryani, whose names are often based on their
-        region of origin. For example, Sindhi biryani developed in the Sindh
-        region of what is now Pakistan, and Hyderabadi biryani developed in the
-        city of Hyderabad in South India.
-      </p>
-      <div
-        class="grid grid-cols-3 gap-6 place-content-center place-items-center p-10"
-      >
-        <a>
+    <div class="py-10" id="Variety-section">
+      <h1 class="text-[#1e223f] text-3xl font-bold text-center py-8">
+        Varieties
+      </h1>
+      <div class="text-[#b9bac3] text-center">
+        <p>
+          There are many types of biryani, whose names are often based on their
+          region of origin.
+        </p>
+        <p>
+          Sindhi biryani developed in the Sindh region of what is now Pakistan,
+          and Hyderabadi biryani developed in the city of Hyderabad in South
+          India.
+        </p>
+      </div>
+      <div class="grid grid-cols-3 gap-7 px-20 pt-10">
+        <div class="grid place-items-center">
           <img
-            src="./assets/img/hyderabadi briyani.webp"
-            class="w-80 rounded"
+            src="./assets/img/hyderabadi.png"
+            class="w-48 rounded hover:scale-110"
           />
-          <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
+          <p class="text-[#1e223f] text-xl font-bold pt-5 pb-1">
             Hyderabadi Biryani
           </p>
-        </a>
-        <a>
-          <img src="./assets/img/mughalai briyani.jpg" class="w-80 rounded" />
-          <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
+          <p class="text-[#b9bac3]">
+            Hyderabadi biryani is a style of biryani originating
+          </p>
+          <p class="text-[#b9bac3]">
+            in Hyderabad, made with basmati rice and meat.
+          </p>
+          <div class="flex pt-1.5 pb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#b9bac3"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="bg-[#fc7f09] w-fit px-7 py-2 rounded-3xl relative text-white font-semibold hover:scale-110"
+          >
+            See more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              class="absolute top-2 right-3 pl-3"
+            >
+              <path
+                fill="#fff"
+                d="M16.15 13H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.313t.712.288L19.3 11.3q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7L16.15 13Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="grid place-items-center">
+          <img
+            src="./assets/img/mughalai_briyani.png"
+            class="w-48 rounded hover:scale-110"
+          />
+          <p class="text-[#1e223f] text-xl font-bold pt-5 pb-1">
             Mughalai Biryani
           </p>
-        </a>
-        <a href="">
-          <img src="./assets/img/Lucknowi Briyani.jpg" class="w-80 rounded" />
-          <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
+          <p class="text-[#b9bac3]">
+            Mughlai biryani is a variety of Indian biryani that is
+          </p>
+          <p class="text-[#b9bac3]">
+            savored by the Mughal Emperors in the past.
+          </p>
+          <div class="flex pt-1.5 pb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#b9bac3"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="bg-[#fc7f09] w-fit px-7 py-2 rounded-3xl relative text-white font-semibold hover:scale-110"
+          >
+            See more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              class="absolute top-2 right-3 pl-3"
+            >
+              <path
+                fill="#fff"
+                d="M16.15 13H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.313t.712.288L19.3 11.3q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7L16.15 13Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="grid place-items-center">
+          <img src="./assets/img/lc.png" class="w-48 rounded hover:scale-110" />
+          <p class="text-[#1e223f] text-xl font-bold pt-5 pb-1">
             Lucknowi Biryani
           </p>
-        </a>
-        <a href="">
-          <img src="assets/img/ambur briyani.jpg" class="w-80 rounded" />
-          <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
-            Ambur Biryani
+          <p class="text-[#b9bac3]">
+            Lucknowi Biryani has a uniquely delicate flavor and
           </p>
-        </a>
-        <a href="">
-          <img src="./assets/img/bombay briyani.jpg" class="w-80 rounded" />
-          <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
+          <p class="text-[#b9bac3]">rich fragrance.</p>
+          <div class="flex pt-1.5 pb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#b9bac3"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="bg-[#fc7f09] w-fit px-7 py-2 rounded-3xl relative text-white font-semibold hover:scale-110"
+          >
+            See more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              class="absolute top-2 right-3 pl-3"
+            >
+              <path
+                fill="#fff"
+                d="M16.15 13H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.313t.712.288L19.3 11.3q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7L16.15 13Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="grid place-items-center">
+          <img
+            src="assets/img/Ambur.png"
+            class="w-48 rounded hover:scale-110"
+          />
+          <p class="text-[#1e223f] text-xl font-bold pb-1">Ambur Biryani</p>
+          <p class="text-[#b9bac3]">
+            Ambur biryani is a delightful one-pot meal with
+          </p>
+          <p class="text-[#b9bac3]">succulent pieces of meat cooked.</p>
+          <div class="flex pt-1.5 pb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#b9bac3"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="bg-[#fc7f09] w-fit px-7 py-2 rounded-3xl relative text-white font-semibold hover:scale-110"
+          >
+            See more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              class="absolute top-2 right-3 pl-3"
+            >
+              <path
+                fill="#fff"
+                d="M16.15 13H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.313t.712.288L19.3 11.3q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7L16.15 13Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="grid place-items-center">
+          <img
+            src="./assets/img/Bombay.png"
+            class="w-44 rounded hover:scale-110"
+          />
+          <p class="text-[#1e223f] text-xl font-bold pl- pt-5 pb-1 text-center">
             Bombay Biryani
           </p>
-        </a>
-        <a href="">
-          <img src="./assets/img/sindhi briyani.jpg" class="w-80 rounded" />
-          <p class="text-[#EAC696] px-20 font-medium text-lg py-2">
-            Sindhi Biryani
+          <p class="text-[#b9bac3]">
+            Bombay Biryani is a perfectly cooked rice dish,
           </p>
-        </a>
+          <p class="text-[#b9bac3]">seasoned with whole spices</p>
+          <div class="flex pt-1.5 pb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#b9bac3"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="bg-[#fc7f09] w-fit px-7 py-2 rounded-3xl relative text-white font-semibold hover:scale-110"
+          >
+            See more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              class="absolute top-2 right-3 pl-3"
+            >
+              <path
+                fill="#fff"
+                d="M16.15 13H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.313t.712.288L19.3 11.3q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7L16.15 13Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="grid place-items-center">
+          <img
+            src="./assets/img/Sindhi.png"
+            class="w-52 rounded hover:scale-110"
+          />
+          <p class="text-[#1e223f] text-xl font-bold pb-1">Sindhi Biryani</p>
+          <p class="text-[#b9bac3]">
+            Sindhi Biryani is a special meat and rice biryani
+          </p>
+          <p class="text-[#b9bac3]">from the Sindh province of Pakistan.</p>
+          <div class="flex pt-1.5 pb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fc7f09"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#b9bac3"
+                d="m5.825 22l2.325-7.6L2 10h7.6L12 2l2.4 8H22l-6.15 4.4l2.325 7.6L12 17.3L5.825 22Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="bg-[#fc7f09] w-fit px-7 py-2 rounded-3xl relative text-white font-semibold hover:scale-110"
+          >
+            See more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              class="absolute top-2 right-3 pl-3"
+            >
+              <path
+                fill="#fff"
+                d="M16.15 13H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.313t.712.288L19.3 11.3q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7L16.15 13Z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- About-section -->
+    <div class="flex justify-around items-center bg-gray-50 py-4">
+      <img src="./assets/img/Sindhi.png" class="rounded-xl w-80 shadow-lg" />
+      <div class="space-y-5">
+        <h1 class="text-[#1e223f] text-3xl font-bold">Why Briyani?</h1>
+        <div class="text-[#b8bac5]">
+          <p>Biryani is a tasty mixed rice dish that can be enjoyed alone or</p>
+          <p>combined with any Indian curry to enhance its flavour.</p>
+        </div>
+        <div
+          class="bg-[#fc7f09] w-fit px-7 py-2 rounded-3xl relative text-white font-semibold hover:scale-110"
+        >
+          Explore Story
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            class="absolute top-2 right-3 pl-3"
+          >
+            <path
+              fill="#fff"
+              d="M16.15 13H5q-.425 0-.713-.288T4 12q0-.425.288-.713T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.313t.712.288L19.3 11.3q.15.15.213.325t.062.375q0 .2-.063.375t-.212.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7L16.15 13Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
     <!-- Origin -->
-    <div class="bg-[#C8AE7D] p-3" id="origin">
-      <h1 class="text-center text-3xl mt-7 text-[#DBCBBD]">Origin</h1>
-      <div class="flex px-14 py-10">
-        <video
-          controls
-          autoplay
-          muted
-          loop
-          src="./assets/img/Tracing The History & Origin Of Biryani _ Food Route Ep 2 _ Curly Tales.mp4"
-          width="417 height-417"
-          class="rounded"
-        ></video>
-        <p class="text-[#65451F] px-20 font-medium text-lg py-2">
-          The exact origin of the dish is uncertain. In North India, different
-          varieties of biryani developed in the Muslim centres of Delhi (Mughlai
-          cuisine), Rampur, Lucknow (Awadhi cuisine) and other small
-          principalities. In South India, where rice is more widely used as a
-          staple food, several distinct varieties of biryani emerged from
-          Hyderabad Deccan (where some believe the dish originated[10]) as well
-          as Tamil Nadu (Ambur, Thanjavur, Chettinad, Salem, Dindigal), Kerala
-          (Malabar), Telangana, and Karnataka (Bhatkal) where Muslim communities
-          were present.
-        </p>
+    <div class="p-20">
+      <div
+        class="bg-gray-200] p-3 px-15 border border-[#fc7f09] rounded-xl w-fit h-fit"
+        id="origin"
+      >
+        <h1 class="text-[#1e223f] text-3xl font-bold text-center py-7">
+          Origin
+        </h1>
+        <div class="flex px-14 py-10">
+          <video
+            controls
+            autoplay
+            muted
+            loop
+            src="./assets/img/Tracing The History & Origin Of Biryani _ Food Route Ep 2 _ Curly Tales.mp4"
+            width="417 height-417"
+            class="rounded-xl"
+          ></video>
+          <p class="text-[#b9bac3] px-20 font-medium py-2">
+            The exact origin of the dish is uncertain. In North India, different
+            varieties of biryani developed in the Muslim centres of Delhi
+            (Mughlai cuisine), Rampur, Lucknow (Awadhi cuisine) and other small
+            principalities. In South India, where rice is more widely used as a
+            staple food, several distinct varieties of biryani emerged from
+            Hyderabad Deccan (where some believe the dish originated[10]) as
+            well as Tamil Nadu (Ambur, Thanjavur, Chettinad, Salem, Dindigal),
+            Kerala (Malabar), Telangana, and Karnataka (Bhatkal) where Muslim
+            communities were present.
+          </p>
+        </div>
       </div>
     </div>
     <!-- footer -->
-    <foooter class="bg-[#EAC696] text-[#000]">
-      <div class="text-xs text-center p-2 bg-[#EAC696]">
+    <div class="text-[#000] bg-[#fc7f09] p-5">
+      <div class="text-xs text-center p-2 bg-[#fc7f09]">
         This is a Part of CyberDude Internship Program
       </div>
-      <div class="text-xs text-center bg-[#EAC696]">
+      <div class="text-xs text-center bg-[#fc7f09]">
         Copyright &copy; 2023 -
         <a href="https://yrd369.github.io/Briyani-Landing-Page/"
           >Yogha Raj Dhayal</a
         >
         - All Rights Reserved
-      </div></foooter
-    >
+      </div>
+    </div>
   </body>
 </html>
