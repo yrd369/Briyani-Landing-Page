@@ -13,88 +13,108 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./dist/assets/index-14317bd0.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- Header-section -->
-    <header class="flex items-center justify-around px-10">
+    <header
+      class="flex items-center justify-between px-6 md:justify-around md:px-10"
+    >
       <div class="flex items-center">
         <img src="./assets/img/logo.png" class="w-20 mt-3" />
         <p class="text-[#fc7f09] font-bold text-xl">Biryani</p>
       </div>
-      <ul class="flex font-semibold space-x-7">
-        <a href="#"><li class="cursor-pointer hover:text-[#b9bac3] ">Home</li></a>
-       <a href="#About-section"><li class="cursor-pointer hover:text-[#b9bac3] ">What is Briyani?</li></a>
-        <a href="#Variety-section"><li class="cursor-pointer hover:text-[#b9bac3] ">Varieties</li></a>
-        <a href="#origin"><li class="cursor-pointer hover:text-[#b9bac3] ">Origin</li></a>
+      <ul class="hidden md:flex font-semibold space-x-7">
+        <a href="#"
+          ><li class="cursor-pointer hover:text-[#b9bac3]">Home</li></a
+        >
+        <a href="#About-section"
+          ><li class="cursor-pointer hover:text-[#b9bac3]">
+            What is Briyani?
+          </li></a
+        >
+        <a href="#Variety-section"
+          ><li class="cursor-pointer hover:text-[#b9bac3]">Varieties</li></a
+        >
+        <a href="#origin"
+          ><li class="cursor-pointer hover:text-[#b9bac3]">Origin</li></a
+        >
       </ul>
       <img src="./assets/img/logo-2-removebg-preview.png" class="w-20" />
     </header>
     <!-- hero-section -->
-    <div class="flex items-center justify-around ml-10 px-24">
+    <div
+      class="md:flex items-center justify-around px-5 md:bg-slate-200 md:px-24 text-3xl md:text-5xl font-bold md:py-12"
+    >
       <div class="space-y-6">
         <div class="text-[#1e223f] space-y-1.5">
-          <h1 class="text-5xl font-bold">Keep Calm &</h1>
-          <h1 class="text-5xl font-bold">
+          <h1 class="md:text-5xl">Keep Calm &</h1>
+          <h1 class="md:text-5xl">
             Add <span class="text-[#fc7f09]">Dum</span>To Your
           </h1>
-          <h1 class="text-5xl font-bold text-[#fc7f09]">Briyani.</h1>
+          <h1 class="text-[#fc7f09] md:text-5xl">Briyani.</h1>
         </div>
-        <div class="text-[#b9bac3]">
+        <div class="text-[#b9bac3] text-base md:text-base font-normal">
           <p>Food Tasted Better when you eat it with</p>
           <p>famil and friends.</p>
         </div>
         <div
-          class="bg-[#fc7f09] text-white w-fit text-center rounded-xl font-semibold px-5 py-2 hover:scale-110"
+          class="bg-[#fc7f09] text-white w-fit text-center rounded-xl font-semibold px-5 py-2 hover:scale-110 text-base"
         >
           Know more
         </div>
       </div>
-      <img src="./assets/img/hero.png" class="drop-shadow-2xl animate__animated animate__bounceInDown" />
+      <div>
+        <img
+          src="./assets/img/hero.png"
+          class="md:h-full md:w-full drop-shadow-2xl animate__animated animate__bounceInDown"
+        />
+      </div>
     </div>
 
     <!-- Nutritional value -->
     <div
-      class="mx-20 relative rounded-xl"
-      style="background-image: url('./assets/img/background.jpg'); height: 100vh"
+      class="md:mx-20 relative rounded-xl object-cover md:mt-10"
+      style="
+        background-image: url('./assets/img/background.jpg');
+        height: 100vh;
+      "
     >
       <img
         src="./assets/img/nutrtion.jpg"
-        class="rounded-3xl absolute top-7 left-8"
+        class="rounded-3xl absolute top-7 left-12 md:left-8"
       />
     </div>
     <!-- Variety-section -->
     <div class="py-10" id="Variety-section">
-      <h1 class="text-[#1e223f] text-3xl font-bold text-center py-8">
+      <h1
+        class="text-[#1e223f] text-2xl md:text-3xl font-bold text-center py-8"
+      >
         Varieties
       </h1>
-      <div class="text-[#b9bac3] text-center">
-        <p>
+      <div class="text-[#b9bac3] text-center md:text-base  px-5 md:px24">
+        <p class="md:px-32">
           There are many types of biryani, whose names are often based on their
           region of origin.
-        </p>
-        <p>
           Sindhi biryani developed in the Sindh region of what is now Pakistan,
           and Hyderabadi biryani developed in the city of Hyderabad in South
           India.
         </p>
       </div>
-      <div class="grid grid-cols-3 gap-7 px-20 pt-10">
+      <div class="grid md:grid-cols-3 gap-7 px-5 md:px-20 pt-10">
         <div class="grid place-items-center">
           <img
             src="./assets/img/hyderabadi.png"
             class="w-48 rounded hover:scale-110"
           />
-          <p class="text-[#1e223f] text-xl font-bold pt-5 pb-1">
+          <p class="text-[#1e223f] text-lg md:text-xl font-bold pt-5 pb-1">
             Hyderabadi Biryani
           </p>
-          <p class="text-[#b9bac3]">
-            Hyderabadi biryani is a style of biryani originating
-          </p>
-          <p class="text-[#b9bac3]">
-            in Hyderabad, made with basmati rice and meat.
+          <p class="text-[#b9bac3] text-base  text-center">
+            Hyderabadi biryani is a style of biryani originating in Hyderabad,
+            made with basmati rice and meat.
           </p>
           <div class="flex pt-1.5 pb-3">
             <svg
@@ -176,14 +196,12 @@
             src="./assets/img/mughalai_briyani.png"
             class="w-48 rounded hover:scale-110"
           />
-          <p class="text-[#1e223f] text-xl font-bold pt-5 pb-1">
+          <p class="text-[#1e223f] text-lg md:text-xl font-bold pt-5 pb-1">
             Mughalai Biryani
           </p>
-          <p class="text-[#b9bac3]">
-            Mughlai biryani is a variety of Indian biryani that is
-          </p>
-          <p class="text-[#b9bac3]">
-            savored by the Mughal Emperors in the past.
+          <p class="text-[#b9bac3] text-center">
+            Mughlai biryani is a variety of Indian biryani that is savored by
+            the Mughal Emperors in the past.
           </p>
           <div class="flex pt-1.5 pb-3">
             <svg
@@ -262,13 +280,13 @@
         </div>
         <div class="grid place-items-center">
           <img src="./assets/img/lc.png" class="w-48 rounded hover:scale-110" />
-          <p class="text-[#1e223f] text-xl font-bold pt-5 pb-1">
+          <p class="text-[#1e223f] text-lg md:text-xl font-bold pt-5 pb-1">
             Lucknowi Biryani
           </p>
-          <p class="text-[#b9bac3]">
-            Lucknowi Biryani has a uniquely delicate flavor and
+          <p class="text-[#b9bac3] text-center">
+            Lucknowi Biryani has a uniquely delicate flavor and 
+            rich fragrance.
           </p>
-          <p class="text-[#b9bac3]">rich fragrance.</p>
           <div class="flex pt-1.5 pb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -349,11 +367,10 @@
             src="assets/img/Ambur.png"
             class="w-48 rounded hover:scale-110"
           />
-          <p class="text-[#1e223f] text-xl font-bold pb-1">Ambur Biryani</p>
-          <p class="text-[#b9bac3]">
+          <p class="text-[#1e223f] text-lg md:text-xl font-bold pb-1">Ambur Biryani</p>
+          <p class="text-[#b9bac3] text-center">
             Ambur biryani is a delightful one-pot meal with
-          </p>
-          <p class="text-[#b9bac3]">succulent pieces of meat cooked.</p>
+           succulent pieces of meat cooked.</p>
           <div class="flex pt-1.5 pb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -434,13 +451,12 @@
             src="./assets/img/Bombay.png"
             class="w-44 rounded hover:scale-110"
           />
-          <p class="text-[#1e223f] text-xl font-bold pl- pt-5 pb-1 text-center">
+          <p class="text-[#1e223f] text-lg md:text-xl font-bold pl- pt-5 pb-1 text-center">
             Bombay Biryani
           </p>
-          <p class="text-[#b9bac3]">
+          <p class="text-[#b9bac3] text-center">
             Bombay Biryani is a perfectly cooked rice dish,
-          </p>
-          <p class="text-[#b9bac3]">seasoned with whole spices</p>
+           seasoned with whole spices</p>
           <div class="flex pt-1.5 pb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -521,11 +537,10 @@
             src="./assets/img/Sindhi.png"
             class="w-52 rounded hover:scale-110"
           />
-          <p class="text-[#1e223f] text-xl font-bold pb-1">Sindhi Biryani</p>
-          <p class="text-[#b9bac3]">
+          <p class="text-[#1e223f] text-lg md:text-xl font-bold pb-1">Sindhi Biryani</p>
+          <p class="text-[#b9bac3] text-center">
             Sindhi Biryani is a special meat and rice biryani
-          </p>
-          <p class="text-[#b9bac3]">from the Sindh province of Pakistan.</p>
+           from the Sindh province of Pakistan.</p>
           <div class="flex pt-1.5 pb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -605,10 +620,13 @@
     </div>
 
     <!-- About-section -->
-    <div class="flex justify-around items-center bg-gray-50 py-4" id="About-section">
+    <div
+      class="flex-col md:flex-row flex justify-around items-center bg-slate-200 py-4"
+      id="About-section"
+    >
       <img src="./assets/img/Sindhi.png" class="rounded-xl w-80 shadow-lg" />
-      <div class="space-y-5">
-        <h1 class="text-[#1e223f] text-3xl font-bold">Why Briyani?</h1>
+      <div class="space-y-8 md:space-y-5 px-5">
+        <h1 class="text-[#1e223f] text-xl md:text-3xl font-bold pt-10 md:pt-0">Why Briyani?</h1>
         <div class="text-[#b8bac5]">
           <p>Biryani is a tasty mixed rice dish that can be enjoyed alone or</p>
           <p>combined with any Indian curry to enhance its flavour.</p>
@@ -634,15 +652,15 @@
     </div>
 
     <!-- Origin -->
-    <div class="p-20">
+    <div class="md:p-20">
       <div
         class="bg-gray-200] p-3 px-15 border border-[#fc7f09] rounded-xl w-fit h-fit"
         id="origin"
       >
-        <h1 class="text-[#1e223f] text-3xl font-bold text-center py-7">
+        <h1 class="text-[#1e223f] text-2xl md:text-3xl font-bold text-center py-7">
           Origin
         </h1>
-        <div class="flex px-14 py-10">
+        <div class="p-0 md:flex px-14 py-10">
           <video
             controls
             autoplay
@@ -652,7 +670,7 @@
             width="417 height-417"
             class="rounded-xl"
           ></video>
-          <p class="text-[#b9bac3] px-20 font-medium py-2">
+          <p class="text-[#b9bac3] md:px-20 font-normal py-2">
             The exact origin of the dish is uncertain. In North India, different
             varieties of biryani developed in the Muslim centres of Delhi
             (Mughlai cuisine), Rampur, Lucknow (Awadhi cuisine) and other small
@@ -667,13 +685,15 @@
       </div>
     </div>
     <!-- footer -->
-    <div class="bg-[#fc7f09] p-5">
-      <div class="font-semibold text-center p-2 bg-[#fc7f09]">
+    <div class="bg-[#fc7f09] py-5 md:px-5 md:py-5 rounded md:text-base text-sm">
+      <div class="font-semibold text-center py-2 md:px-2 md:py-2 md:text-base text-sm bg-[#fc7f09]">
         This is a Part of CyberDude Internship Program
       </div>
-      <div class=" font-semibold text-center bg-[#fc7f09]">
+      <div class="font-semibold text-center bg-[#fc7f09]">
         Copyright &copy; 2023 -
-        <a href="https://yrd369.github.io/Briyani-Landing-Page/" class="text-white hover:text-black"
+        <a
+          href="https://yrd369.github.io/Briyani-Landing-Page/"
+          class="text-white hover:text-black"
           >Yogha Raj Dhayal</a
         >
         - All Rights Reserved
